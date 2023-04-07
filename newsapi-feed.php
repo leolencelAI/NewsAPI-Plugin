@@ -30,7 +30,7 @@ function my_news_feed() {
     // Get the settings values
     $pageSize = get_option('my_news_feed_page_size', 10);
     $category = get_option('my_news_feed_category', 'business');
-    $apiKey = get_option('my_news_feed_api_key', '28fabd9c9a3c4090af0a51b9470f9dee');
+    $apiKey = get_option('my_news_feed_api_key', '');
     $cache = get_option('my_news_feed_cache_option', '1min');
 	
     $url = 'https://newsapi.org/v2/top-headlines?country=us';
