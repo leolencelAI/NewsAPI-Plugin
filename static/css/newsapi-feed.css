@@ -1,0 +1,56 @@
+h1, h2, h3, p {
+    font-family: 'Lato';
+    text-align: justify;
+}
+
+.article_unique_link {
+    text-decoration: none;
+    color: black;
+}
+.article_unique_link:hover {
+    color: inherit;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .article_unique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+  .article_unique img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 10px;
+  }
+  
+  .article_unique_title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .article_unique_description {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .article_unique {
+      flex-direction: column;
+    }
+  
+    .article_unique img {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
